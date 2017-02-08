@@ -129,7 +129,7 @@ pre {
 /** 初始化全局标签 **/
 body {
   line-height: 24px;
-  font: 14px Helvetica Neue, Helvetica, PingFang SC, Tahoma, Arial, sans-serif;
+  font: 14px "Microsoft Yahei", "微软雅黑", Arial, "Hiragino Sans GB", "宋体", "Helvetica Neue", Helvetica, sans-serif;
 }
 hr {
   height: 1px;
@@ -480,7 +480,7 @@ a cite {
 .layui-select {
   height: 38px;
   line-height: 38px;
-  line-height: 36px\9;
+  line-height: 36px \9;
   border: 1px solid #e6e6e6;
   background-color: #fff;
   border-radius: 2px;
@@ -966,6 +966,8 @@ a cite {
   line-height: 20px;
   border: 1px solid #e2e2e2;
   font-size: 14px;
+  text-align: center;
+  font-weight: 100;
 }
 .layui-table[lay-even] tr:nth-child(even),
 .layui-table tr:hover {
@@ -1488,7 +1490,6 @@ a cite {
   height: 40px;
   white-space: nowrap;
   font-size: 0;
-  border-bottom: 1px solid #e2e2e2;
   transition: all .2s;
   -webkit-transition: all .2s;
 }
@@ -1510,7 +1511,7 @@ a cite {
   cursor: pointer;
 }
 .layui-tab-title .layui-this {
-  color: #000;
+  color: #ff6e00;
 }
 .layui-tab-title .layui-this:after {
   position: absolute;
@@ -1518,9 +1519,8 @@ a cite {
   top: 0;
   content: '';
   width: 100%;
-  height: 41px;
-  border: 1px solid #e2e2e2;
-  border-bottom-color: #fff;
+  height: 100%;
+  border-bottom: 3px solid #ff6e00;
   border-radius: 2px 2px 0 0;
   -webkit-box-sizing: border-box !important;
   -moz-box-sizing: border-box !important;
@@ -1882,4 +1882,32 @@ body .layui-util-face .layui-layer-content {
     margin-right: 5px;
     margin-bottom: 5px;
   }
+}
+/*内容左对齐*/
+.layui-tal {
+  text-align: left;
+}
+/*内容右对齐*/
+.layui-tar {
+  text-align: right;
+}
+/*边框*/
+.layui-border {
+  border: 1px solid #e7e7e7;
+}
+/*宽度100%*/
+.layui-fill {
+  width: 100%;
+}
+/*大容器*/
+.layui-box-big {
+  padding: 24px;
+}
+/*普通容器*/
+.layui-box {
+  padding: 16px;
+}
+/*小容器*/
+.layui-box-small {
+  padding: 8px;
 }
