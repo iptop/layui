@@ -1,0 +1,211 @@
+
+@primary-color:#ff6e00;
+@head-height:70px;
+@block-bg-color:#fff;
+@main-box-width:1000px; /*主框宽度*/
+@left-box-width: 200px; /*坐标导航框宽度*/
+@box-margin:8px;
+@dashed-color:#e4e4e4; /*虚线颜色*/
+
+
+
+.ktvme{
+  background: #f0f0f0;
+  .head{
+    overflow: hidden;
+    height: @head-height;
+    background: @block-bg-color;
+    box-sizing: border-box;
+    border-top: 3px @primary-color solid;
+    border-bottom: 1px solid @dashed-color;
+
+    text-align: center;
+    .head-inner{
+      width: @main-box-width+@left-box-width + @box-margin*2;
+      margin: 0 auto;
+      .left{
+        float: left;
+        vertical-align: middle;
+        .ico{
+          vertical-align: middle;
+          line-height: @head-height;
+          color: @primary-color;
+          font-size: 30px;
+          font-weight: bold;
+          display: inline-block;
+        }
+        .line{
+          vertical-align: middle;
+          height: 30px;
+          width: 3px;
+          display: inline-block;
+          background: #f1f1f1;
+          line-height: @head-height;
+          margin-left: 10px;
+          margin-right: 10px;
+        }
+        .title{
+          color: #333333;
+          font-size: 20px;
+          vertical-align: middle;
+          display: inline-block;
+
+
+        }
+      }
+      .right{
+        float: right;
+        .user{
+          float: right;
+          height: @head-height;
+          line-height: @head-height;
+          vertical-align: middle;
+          .ico{
+            width: 35px;
+            height: 35px;
+            display: inline-block;
+            border-radius: 30px;
+            vertical-align: middle;
+            background: #ccc;
+          }
+          .user-name{
+            margin-left: 5px;
+            margin-right: 5px;
+          }
+          .link{
+            margin-top: 10px;
+            display: inline-block;
+            vertical-align: middle;
+            width: 0px;
+            height: 10px;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-top: 10px solid #ccc;
+          }
+        }
+        .menu{
+          float: right;
+          margin-right: 50px;
+          .layui-tab-title{
+            li{
+              height: @head-height - 8px;
+              line-height: @head-height - 8px;
+              font-size: 20px;
+              padding-left: 20px;
+              padding-right: 20px;
+            }
+            height: @head-height;
+            line-height: @head-height;
+          }
+        }
+      }
+    }
+  }
+
+  .body{
+    text-align: center;
+    .body-inner{
+      width: @main-box-width+@left-box-width + @box-margin*2;
+      margin: 0 auto;
+      .left-box{
+        float: left;
+        width: @left-box-width;
+        background: @block-bg-color;
+        .menu{
+          padding-top: 10px;
+          padding-bottom: 10px;
+          .item{
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-top: 5px;
+            padding-bottom: 5px;
+            .ico{
+              float: left;
+              width: 25px;
+              height: 25px;
+              background: #ccc;
+              margin-left: 10px;
+            }
+            .title{
+              float: left;
+              font-size: 16px;
+              margin-left: 10px;
+            }
+            .tick{
+              float: right;
+              margin-top: 8px;
+              display: inline-block;
+              vertical-align: middle;
+              border-top: 5px solid transparent;
+              border-bottom: 5px solid transparent;
+              border-left: 7px solid #1f1f1f;
+
+            }
+            .active{
+              float: right;
+              margin-top: 8px;
+              display: inline-block;
+              vertical-align: middle;
+              border-left: 5px solid transparent;
+              border-right: 5px solid transparent;
+              border-top: 7px solid #1f1f1f;
+            }
+
+          }
+          .item-child{
+            div{
+              padding-top: 5px;
+              text-align: left;
+              padding-left: 60px;
+              padding-bottom: 5px;
+              color: #616161;
+              cursor: pointer;
+            }
+            .active{
+              background: #eeeeee;
+            }
+          }
+        }
+      }
+      .main-box{
+        float: right;
+        width: @main-box-width;
+        .navigation{
+          float: left;
+          margin-top: 5px;
+          margin-bottom: 5px;
+        }
+
+        .main-box-inner{
+          background: @block-bg-color;
+          .menu{
+            float: left;
+            padding-left: 16px;
+          }
+          .query-box{
+            padding-top: 20px;
+            border-top: 1px solid @dashed-color;
+            border-bottom:  1px solid @dashed-color;
+            padding-bottom: 0;
+
+          }
+          .content{
+            .goods-img{
+              width: 100px;
+              height: auto;
+            }
+            .page{
+              text-align: right;
+            }
+          }
+        }
+      }
+    }
+
+
+  }
+
+
+}
+
+

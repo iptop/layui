@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>商家平台测试</title>
+
+    <link rel="stylesheet" href="../build/css/layui.css">
+    <script src="../test/js/jquery.min.js"></script>
+    <script src="../build/layui.js"></script>
+    <script src="../build/lay/modules/laydate.js"></script>
+
+
+
+    <!--with webpack hot module replacement-->
+    <!--<script src="/bundle.js"></script>-->
+    <link rel="stylesheet" href="./style.css"/>
+
+
+
+</head>
+<body class="ktvme">
+<div class="head">
+    <div class="head-inner">
+        <div class="left">
+            <span class="ico">K米</span><span class="line"></span><span class="title">商家平台</span>
+        </div>
+        <div class="right">
+            <div class="user">
+                <span class="ico"></span>
+                <span class="user-name">超级管理员</span>
+                <span class="link"></span>
+            </div>
+
+            <div class="menu">
+                <ul class="layui-tab-title">
+                    <li class="layui-this">产品中心</li>
+                    <li class="">智慧KTV</li>
+                    <li class="">财务中心</li>
+                    <li class="">营销中心</li>
+                    <li class="">微+中心</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="layui-clear"></div>
+    </div>
+</div>
+<div class="body layui-box-big">
+    <div class="body-inner">
+        <div class="left-box layui-border">
+            <div class="menu">
+                    <div class="item">
+                        <div class="ico"></div>
+                        <div class="title">首页</div>
+                        <div class="tick"></div>
+                        <div class="layui-clear"></div>
+                    </div>
+
+                    <div class="item">
+                        <div class="ico"></div>
+                        <div class="title">导航一</div>
+                        <div class="active"></div>
+                        <div class="layui-clear"></div>
+                    </div>
+                    <div class="item-child">
+                        <div class="active">选中项目</div>
+                        <div>闯关赛</div>
+                        <div>达人版</div>
+                        <div>会员评价管理</div>
+                        <div>包厢消息推送</div>
+                        <div>会员评价管理</div>
+
+                    </div>
+
+                    <div class="item">
+                        <div class="ico"></div>
+                        <div class="title">导航二</div>
+                        <div class="tick"></div>
+                        <div class="layui-clear"></div>
+
+                    </div>
+
+
+                    <div class="item">
+                        <div class="ico"></div>
+                        <div class="title">导航三</div>
+                        <div class="tick"></div>
+                        <div class="layui-clear"></div>
+
+                    </div>
+
+                    <div class="item">
+                        <div class="ico"></div>
+                        <div class="title">帮助</div>
+                        <div class="tick"></div>
+                        <div class="layui-clear"></div>
+
+                    </div>
+
+                </div>
+        </div>
+
+        <div class="main-box">
+            <div class="navigation">
+                    <a href="">首页
+                        <span class="layui-box">&gt;</span>
+                    </a>
+                    <a><cite>导航元素</cite></a>
+            </div>
+            <div class="layui-clear"></div>
+            <div class="main-box-inner layui-border">
+                <div class="menu">
+                    <ul class="layui-tab-title">
+                        <li class="layui-this">二级导航</li>
+                        <li class="">二级导航</li>
+                    </ul>
+                </div>
+                <div class="layui-clear"></div>
+
+                <div class="query-box layui-box-small">
+                    <form class="layui-form">
+                        <table class="layui-fill form-table" >
+                            <tr>
+                                <td class="layui-tal">
+                                    <label class="layui-box-small">商品名称：</label>
+                                </td>
+                                <td>
+                                    <input type="text" lay-verify="title" autocomplete="off" placeholder="请输入商品名称" class="layui-input">
+                                </td>
+                                <td>
+                                    <label class="layui-box-small">生效时间：</label>
+                                </td>
+                                <td>
+                                    <input type="text"  lay-verify="date" placeholder="yyyy-mm-dd" autocomplete="off" class="layui-input" onclick="layui.laydate({elem: this})">
+                                </td>
+                                <td>   <label class="layui-box-small">-</label>  </td>
+                                <td>
+                                    <input type="text" lay-verify="date" placeholder="yyyy-mm-dd" autocomplete="off" class="layui-input" onclick="layui.laydate({elem: this})">
+                                </td>
+                                <td>  <label class="layui-box-small">状态</label> </td>
+                                <td>
+                                    <div class="layui-input-inline">
+                                        <select name="quiz1">
+                                            <option value="">全部</option>
+                                            <option value="1" >启用</option>
+                                            <option value="2">禁用</option>
+                                            <option value="3">启用</option>
+                                            <option value="4">禁用</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="8" style="text-align: right">
+
+                                    <div class="layui-box-small">
+                                        <button class="layui-btn layui-btn-primary layui-btn-small">检索</button>
+                                        <button class="layui-btn layui-btn-primary layui-btn-small">重置</button>
+                                        <button class="layui-btn layui-btn-primary layui-btn-small">新增</button>
+                                    </div>
+
+
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+
+                <div class="content layui-box">
+                    <table class="layui-table">
+                        <colgroup>
+                            <col width="150">
+                            <col width="150">
+                            <col>
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th>顺序权重</th>
+                            <th>商品名称</th>
+                            <th>图片</th>
+                            <th>现价/原价</th>
+                            <th>已售/库存</th>
+                            <th>生效时间</th>
+                            <th>商品状态</th>
+                            <th>操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>888</td>
+                            <td>下午场小包套装</td>
+                            <td > <img class="goods-img" src="./res/goods.jpg"> </td>
+                            <td>10.00/12.00</td>
+                            <td>0/9999</td>
+                            <td>2016-10-16 16:34:00</td>
+                            <td>初始</td>
+                            <td>
+                                <a href="">启用</a> |
+                                <a href="">编辑</a> |
+                                <a href="">删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>888</td>
+                            <td>下午场小包套装</td>
+                            <td><img class="goods-img" src="./res/goods.jpg"></td>
+                            <td>10.00/12.00</td>
+                            <td>0/9999</td>
+                            <td>2016-10-16 16:34:00</td>
+                            <td>初始</td>
+                            <td>
+                                <a href="">启用</a> |
+                                <a href="">编辑</a> |
+                                <a href="">删除</a>
+                            </td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                    <div id="page"></div>
+                    <script>
+                        layui.use(['laypage', 'layer'], function(){
+                            var laypage = layui.laypage
+                                    ,layer = layui.layer;
+
+                            laypage({
+                                cont: 'page'
+                                ,pages: 100
+                                ,skip: true
+                            });
+                        });
+                    </script>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+</body>
+<script>
+    layui.use(['form', 'layedit', 'laydate'], function(){})
+</script>
+
+</html>

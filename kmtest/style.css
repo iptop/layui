@@ -1,0 +1,185 @@
+/*主框宽度*/
+/*坐标导航框宽度*/
+/*虚线颜色*/
+.ktvme {
+  background: #f0f0f0;
+}
+.ktvme .head {
+  overflow: hidden;
+  height: 70px;
+  background: #fff;
+  box-sizing: border-box;
+  border-top: 3px #ff6e00 solid;
+  border-bottom: 1px solid #e4e4e4;
+  text-align: center;
+}
+.ktvme .head .head-inner {
+  width: 1216px;
+  margin: 0 auto;
+}
+.ktvme .head .head-inner .left {
+  float: left;
+  vertical-align: middle;
+}
+.ktvme .head .head-inner .left .ico {
+  vertical-align: middle;
+  line-height: 70px;
+  color: #ff6e00;
+  font-size: 30px;
+  font-weight: bold;
+  display: inline-block;
+}
+.ktvme .head .head-inner .left .line {
+  vertical-align: middle;
+  height: 30px;
+  width: 3px;
+  display: inline-block;
+  background: #f1f1f1;
+  line-height: 70px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.ktvme .head .head-inner .left .title {
+  color: #333333;
+  font-size: 20px;
+  vertical-align: middle;
+  display: inline-block;
+}
+.ktvme .head .head-inner .right {
+  float: right;
+}
+.ktvme .head .head-inner .right .user {
+  float: right;
+  height: 70px;
+  line-height: 70px;
+  vertical-align: middle;
+}
+.ktvme .head .head-inner .right .user .ico {
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  border-radius: 30px;
+  vertical-align: middle;
+  background: #ccc;
+}
+.ktvme .head .head-inner .right .user .user-name {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.ktvme .head .head-inner .right .user .link {
+  margin-top: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 0px;
+  height: 10px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 10px solid #ccc;
+}
+.ktvme .head .head-inner .right .menu {
+  float: right;
+  margin-right: 50px;
+}
+.ktvme .head .head-inner .right .menu .layui-tab-title {
+  height: 70px;
+  line-height: 70px;
+}
+.ktvme .head .head-inner .right .menu .layui-tab-title li {
+  height: 62px;
+  line-height: 62px;
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.ktvme .body {
+  text-align: center;
+}
+.ktvme .body .body-inner {
+  width: 1216px;
+  margin: 0 auto;
+}
+.ktvme .body .body-inner .left-box {
+  float: left;
+  width: 200px;
+  background: #fff;
+}
+.ktvme .body .body-inner .left-box .menu {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.ktvme .body .body-inner .left-box .menu .item {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 5px;
+  padding-bottom: 5px;
+}
+.ktvme .body .body-inner .left-box .menu .item .ico {
+  float: left;
+  width: 25px;
+  height: 25px;
+  background: #ccc;
+  margin-left: 10px;
+}
+.ktvme .body .body-inner .left-box .menu .item .title {
+  float: left;
+  font-size: 16px;
+  margin-left: 10px;
+}
+.ktvme .body .body-inner .left-box .menu .item .tick {
+  float: right;
+  margin-top: 8px;
+  display: inline-block;
+  vertical-align: middle;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 7px solid #1f1f1f;
+}
+.ktvme .body .body-inner .left-box .menu .item .active {
+  float: right;
+  margin-top: 8px;
+  display: inline-block;
+  vertical-align: middle;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 7px solid #1f1f1f;
+}
+.ktvme .body .body-inner .left-box .menu .item-child div {
+  padding-top: 5px;
+  text-align: left;
+  padding-left: 60px;
+  padding-bottom: 5px;
+  color: #616161;
+  cursor: pointer;
+}
+.ktvme .body .body-inner .left-box .menu .item-child .active {
+  background: #eeeeee;
+}
+.ktvme .body .body-inner .main-box {
+  float: right;
+  width: 1000px;
+}
+.ktvme .body .body-inner .main-box .navigation {
+  float: left;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.ktvme .body .body-inner .main-box .main-box-inner {
+  background: #fff;
+}
+.ktvme .body .body-inner .main-box .main-box-inner .menu {
+  float: left;
+  padding-left: 16px;
+}
+.ktvme .body .body-inner .main-box .main-box-inner .query-box {
+  padding-top: 20px;
+  border-top: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
+  padding-bottom: 0;
+}
+.ktvme .body .body-inner .main-box .main-box-inner .content .goods-img {
+  width: 100px;
+  height: auto;
+}
+.ktvme .body .body-inner .main-box .main-box-inner .content .page {
+  text-align: right;
+}
